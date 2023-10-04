@@ -36,3 +36,8 @@
 
 4. **Validación de Entradas:**
    Cada entrada en el formulario se valida mediante expresiones regulares y lógica condicional. Las expresiones regulares actúan como patrones que definen el formato requerido para datos específicos, como ID, teléfono, correo y fecha de nacimiento. Si los datos ingresados no coinciden con estos patrones, se consideran incorrectos y se muestra un mensaje con las observaciones encontradas, o en su defecto, el error resaltado debajo de cada campo de texto.
+
+### Explicación (Primera Versión y Segunda Versión) 🐈
+En esencia, durante la implementación de las validaciones en el formulario, se adoptó un enfoque para proporcionar observaciones sobre los errores detectados. Para lograr esto, se manejó un elemento `<div>` en el documento HTML, destinado a guardar el contenido de texto que contendría los mensajes de error acumulados. Estos mensajes de error, cuando surgían durante la validación, se almacenaban en una estructura de datos, específicamente un arreglo, con el propósito de presentarlos posteriormente al usuario.
+
+Se estableció una condición mediante la cual, si el arreglo de errores resultaba estar vacío, se activaba la presentación de un mensaje de confirmación del formulario, indicando que la validación se había completado satisfactoriamente; caso contrario, mostraba los mensajes de error encontrados.
