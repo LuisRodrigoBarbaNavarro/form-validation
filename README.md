@@ -43,3 +43,12 @@ En esencia, durante la implementación de las validaciones en el formulario, se 
 Se estableció una condición mediante la cual, si el arreglo de errores resultaba estar vacío, se activaba la presentación de un mensaje de confirmación del formulario, indicando que la validación se había completado satisfactoriamente; caso contrario, mostraba los mensajes de error encontrados.
 
 ![Primera y Segunda Versión](https://i.imgur.com/wY7lYMq.png)
+
+### Explicación (Tercera Versión) 🐈
+El proceso de gestión de errores experimentó una serie de cambios con el fin de mejorar la presentación de los mensajes de error durante el proceso de validación. En lugar de mostrar estos mensajes en un contenedor, se implementó una solución que los colocaba debajo de cada campo de entrada de texto.
+
+Para lograr esto, se introdujo una etiqueta <span> debajo de cada campo de entrada. Se desarrolló una función personalizada que, como parámetros, recibía el identificador único del campo de entrada y el mensaje de error asociado. Esta función permitía establecer de manera eficiente el mensaje de error debajo del campo de texto correspondiente.
+
+También, esta implementación permite eliminar los mensajes de error de forma dinámica cuando los datos ingresados eran corregidos y cumplían con los criterios de validación.
+
+![Tercera Versión](https://i.imgur.com/nBzBOZ1.png)
