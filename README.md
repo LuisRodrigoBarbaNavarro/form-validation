@@ -1,1 +1,1 @@
-# Práctica 2: Formularios Validados Con javaScript 🐈
+# Práctica 2: Formularios Validados Con JavaScript 🐈
