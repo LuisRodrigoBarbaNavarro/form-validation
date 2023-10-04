@@ -41,3 +41,5 @@
 En esencia, durante la implementación de las validaciones en el formulario, se adoptó un enfoque para proporcionar observaciones sobre los errores detectados. Para lograr esto, se manejó un elemento `<div>` en el documento HTML, destinado a guardar el contenido de texto que contendría los mensajes de error acumulados. Estos mensajes de error, cuando surgían durante la validación, se almacenaban en una estructura de datos, específicamente un arreglo, con el propósito de presentarlos posteriormente al usuario.
 
 Se estableció una condición mediante la cual, si el arreglo de errores resultaba estar vacío, se activaba la presentación de un mensaje de confirmación del formulario, indicando que la validación se había completado satisfactoriamente; caso contrario, mostraba los mensajes de error encontrados.
+
+![Primera y Segunda Versión](https://i.imgur.com/wY7lYMq.png)
